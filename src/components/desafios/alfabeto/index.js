@@ -19,7 +19,7 @@ export default function Alfabeto() {
       timeout = setTimeout(() => {
         setSucess(false);
         clearTimeout(timeout);
-      }, 5000);
+      }, 3000);
       return <Sucess />
     }
 
