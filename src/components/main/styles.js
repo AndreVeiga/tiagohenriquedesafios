@@ -6,6 +6,16 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
   },
+  message: {
+    display: 'flex',
+    '& > *': {
+      margin: theme.spacing(1),
+    },
+  },
+  large: {
+    width: theme.spacing(9),
+    height: theme.spacing(9),
+  },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
@@ -37,7 +47,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
   },
