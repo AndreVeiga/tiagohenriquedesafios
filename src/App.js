@@ -1,5 +1,5 @@
-import Main from './components/main';
+import Routes from './config/routes';
 
 export default function App() {
-  return  <Main />
+  return  <Routes />
 }
