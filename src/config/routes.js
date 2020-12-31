@@ -5,6 +5,7 @@ import endpoint from './endpoint';
 import Main from '../components/main';
 import Desafios from '../components/desafios';
 import Alfabeto from '../components/desafios/alfabeto';
+import Numeros from '../components/desafios/numeros';
 
 export default function routes() {
   return (
@@ -13,6 +14,7 @@ export default function routes() {
           <Route exact path={endpoint.index}><Main/></Route>
           <Route exact path={endpoint.desafios}><Desafios/></Route>
           <Route exact path={endpoint.alfabeto}><Alfabeto/></Route>
+          <Route exact path={endpoint.numeros}><Numeros/></Route>
         </Switch>
     </Router>
   );

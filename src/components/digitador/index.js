@@ -14,7 +14,7 @@ export default function Digitador(props) {
           avancar && avancar();
           setValor('');
           clearTimeout(timeout);
-        }, 500);
+        }, 250);
       }
     }
   }

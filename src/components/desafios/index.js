@@ -10,7 +10,7 @@ export default function Desafios() {
   const classes = useStyles();
 
   const renderButtons = () => Tipos.map(tipo =>
-    <Link to={tipo.url} className={classes.link}>
+    <Link to={tipo.url} key={tipo.url} className={classes.link}>
       <Button size="large" variant="contained"
           color="primary" className={classes.margin}>
             {tipo.text}
