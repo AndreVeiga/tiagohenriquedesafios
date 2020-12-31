@@ -3,6 +3,7 @@ import Base from '../../base';
 import Digitador from '../../digitador';
 import Data from './data';
 import Sucess from '../sucesso';
+import Erro from '../erro';
 
 export default function Alfabeto() {
   const [index, setIndex] = useState(0);
@@ -42,6 +43,8 @@ export default function Alfabeto() {
           </h1>
         </Digitador>
       )
+    } else {
+      return <Erro />
     }
   }
   return <Base> {renderData()} </Base>
