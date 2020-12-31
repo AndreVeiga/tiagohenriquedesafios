@@ -5,7 +5,7 @@ import Data from './data';
 import Sucess from '../sucesso';
 import Erro from '../erro';
 
-export default function Colors() {
+export default function Aminais() {
   const [index, setIndex] = useState(0);
   const [sucess, setSucess] = useState(false);
   let timeout;
@@ -28,19 +28,10 @@ export default function Colors() {
       return (
         <Digitador  avancar={avancar}
           acerto={Data[index].valor}>
-            <div style= {{
-              textAlign: 'center',
-              margin: 'auto',
-              width: '75%',
-              height: '75px',
-              borderRadius: '5px',
-              backgroundColor: `${Data[index].color}`
-            }}/>
-          <h1 style={{
-            fontSize: '28px'
-            }}>
-            {Data[index].valor.toString().toUpperCase()}
-          </h1>
+            <img style={{width: '125px', height: '125px'}} src={Data[index].img} alt={Data[index].valor} />
+            <h1 style={{ fontSize: '28px' }}>
+              {Data[index].valor.toString().toUpperCase()}
+            </h1>
         </Digitador>
       )
     } else {

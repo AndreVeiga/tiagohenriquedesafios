@@ -7,6 +7,7 @@ import Desafios from '../components/desafios';
 import Alfabeto from '../components/desafios/alfabeto';
 import Numeros from '../components/desafios/numeros';
 import Colors from '../components/desafios/colors';
+import Animais from '../components/desafios/animais';
 
 export default function routes() {
   return (
@@ -17,6 +18,7 @@ export default function routes() {
           <Route exact path={endpoint.alfabeto}><Alfabeto/></Route>
           <Route exact path={endpoint.numeros}><Numeros/></Route>
           <Route exact path={endpoint.colors}><Colors/></Route>
+          <Route exact path={endpoint.animais}><Animais/></Route>
         </Switch>
     </Router>
   );
