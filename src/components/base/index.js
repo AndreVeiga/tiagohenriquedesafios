@@ -65,8 +65,8 @@ export default function Base(props) {
         <Divider />
         <List>
           {ItemMenu.map(item => (
-            <Link to={item.route} className={classes.link}>
-              <ListItem button key={item.text}>
+            <Link to={item.route} key={item.text} className={classes.link}>
+              <ListItem button>
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText primary={item.text} />
               </ListItem>

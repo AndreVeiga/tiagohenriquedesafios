@@ -1,18 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-  message: {
-    display: 'flex',
-    textAlign: 'center',
+  root: {
     '& > *': {
       margin: theme.spacing(1),
+      width: '25ch',
     },
   },
-  large: {
-    width: '100px',
-    height: '100px'
-  },
 }));
-
 
 export default useStyles;
