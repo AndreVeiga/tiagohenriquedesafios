@@ -26,6 +26,7 @@ export default function Digitador(props) {
     <Container maxWidth="sm" style={{textAlign: 'center', marginTop: '10%'}} >
       {props.children}
       <TextField
+        autoFocus={true}
         onChange={e => setValor(e.target.value)}
         value={renderValor()}
         variant="outlined" />
